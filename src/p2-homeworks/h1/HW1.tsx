@@ -3,6 +3,7 @@ import AlternativeMessage from './AlternativeMessage';
 import Message from './Message'
 import classes from './Message.module.css'
 
+
 export type DataMessageType = {
     avatar: string
     name: string
@@ -11,7 +12,7 @@ export type DataMessageType = {
 }
 
 const messageData = {
-    avatar: 'https://yt3.ggpht.com/ytc/AAUvwniE5UUHl7xgQsdCV_JUx4Ky44x12w2XJQWt0q0SUw=s900-c-k-c0x00ffffff-no-rj',
+    avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fimgbin.com%2Fpng%2FPmqdqS0W%2Fdota-2-steam-computer-icons-video-game-developer-png&psig=AOvVaw2rGsozgDS2BuGhyXAa82Hv&ust=1634990504704000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCLiJgbX83fMCFQAAAAAdAAAAABAJ',
     name: 'Vitali',
     message: 'Hello world!',
     time: '22:00',
