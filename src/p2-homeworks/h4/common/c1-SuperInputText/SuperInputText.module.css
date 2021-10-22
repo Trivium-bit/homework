@@ -1,0 +1,28 @@
+.input:focus {
+  outline: none;
+  border:rgb(228, 40, 143) solid 2px;
+}
+
+.superInput {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: rgb(167, 252, 167);
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.errorInput {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: rgb(213, 209, 248);
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.error {
+  color: rgb(212, 40, 40);
+}
