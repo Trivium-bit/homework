@@ -19,7 +19,7 @@
     "typescript": "^4.2.4",
     "uuid": "^8.3.2"
   },
-  "homepage": "http://Trivium-bit.github.io/homework",
+  "homepage": "https://trivium-bit.github.io/homework/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
