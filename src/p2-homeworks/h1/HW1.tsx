@@ -20,15 +20,15 @@ const messageData = {
 
 function HW1() {
     return (
-       
+
         <div className={classes.background}>
-            <hr/>
+            <hr />
             homeworks 1
-            <hr/>
+            <hr />
             <Message avatar={messageData.avatar} name={messageData.name} message={messageData.message} time={messageData.time} />
-             <hr/>
-            {<AlternativeMessage/>}
-            <hr/>
+            <hr />
+            {<AlternativeMessage />}
+            <hr />
         </div>
     )
 }

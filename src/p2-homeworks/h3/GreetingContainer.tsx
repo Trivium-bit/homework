@@ -1,6 +1,6 @@
-import React, {KeyboardEvent, useState} from "react";
+import React, { KeyboardEvent, useState } from "react";
 import Greeting from "./Greeting";
-import {UserType} from "./HW3"
+import { UserType } from "./HW3"
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
@@ -11,12 +11,12 @@ type GreetingContainerPropsType = {
 
 // более современный и удобный для про :)
 // уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUserCallback }) => { // деструктуризация пропсов
     const [name, setName] = useState<string>(""); // need to fix any
     const [error, setError] = useState<string>(""); // need to fix any
 
     const setNameCallback = (e: React.ChangeEvent<HTMLInputElement>): void => { // need to fix any
-        
+
         const trimmedName = e.currentTarget.value.trim() // обрезание пробелов в начале, середине и в конце 
         if (trimmedName) {
             setName(trimmedName)
@@ -24,14 +24,14 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         } else {
             setName('')
             setError('name is require')
-        }      
+        }
         // need to fix
     };
     const addUser = () => {
         addUserCallback(name)
         alert(`Hello ${name}!`);
         setName('') //зануляем Input
-      // need to fix
+        // need to fix
     };
 
     const onEnter = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -39,7 +39,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser()
         }
     }
-    
+
     const totalUsers = users.length; // need to fix
 
     return (
