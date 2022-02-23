@@ -22,7 +22,7 @@ function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
 
     // need to fix any
-    const finalPeople = people.map((p: UserType) => ( <div key={p._id}> {p.name} {p.age} </div> ))
+    const finalPeople = people.map((p: UserType) => ( <div key={p._id} className={s.item}> <span>{p.name}</span> {p.age} </div> ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'SORT-NAME-UP'}))
     const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'SORT-NAME-DOWN'}))

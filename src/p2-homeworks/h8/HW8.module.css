@@ -2,6 +2,13 @@
     background-color: rgb(183, 244, 255);
 }
 .fonts {
-font-family: 'Shizuru', cursive;
-color: olive;
+    font-family: 'Shizuru', cursive;
+    color: olive;
 }
+.item{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 15px;
+    width: 250px;
+}    
+   
