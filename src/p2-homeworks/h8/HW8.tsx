@@ -23,9 +23,9 @@ function HW8() {
     // need to fix any
     const finalPeople = people.map((p: UserType) => ( <div key={p._id}> {p.name} {p.age} </div> ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'}))
-    const Check18 = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 18}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'SORT-NAME-UP'}))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'SORT-NAME-DOWN'}))
+    const Check18 = () => setPeople(homeWorkReducer(initialPeople, {type: 'CHECK-18'}))
 
     return (
         <div>
