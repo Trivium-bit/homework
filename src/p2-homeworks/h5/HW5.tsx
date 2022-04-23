@@ -11,8 +11,6 @@ function HW5() {
                 <Header />
                 <Routes />
             </HashRouter>
-
-
         </div>
     );
 }
