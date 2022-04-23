@@ -25,8 +25,6 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onKeyDown={onEnter}
                 //onBlur={setNameCallback} если убрать фокус с элемента, сработает setNameCallback
                 />
-
-
                 <button className={s.submit} onClick={addUser} disabled={!name} >add</button>
                 <span>{totalUsers}</span>
             </div>

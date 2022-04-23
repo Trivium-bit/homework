@@ -14,15 +14,12 @@ function HW4() {
             alert(text); // если нет ошибки показать текст
         }
     }
-
     const [checked, setChecked] = useState<boolean>(false);
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
-
     return (
         <div className={s.hw4}>
             <hr />
             homeworks 4
-
             <div className={s.column}>
                 {/*should work (должно работать)*/}
                 <SuperInputText
@@ -48,17 +45,7 @@ function HW4() {
                 >
                     some text {/*// этот текст попадёт в children*/}
                 </SuperCheckbox>
-
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange} />
             </div>
-
-            <hr />
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
-            <hr />
         </div>
     );
 }

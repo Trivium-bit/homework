@@ -7,16 +7,18 @@
   font-size: 12px;
   font-family: inherit;
   background-color: rgb(126, 176, 185);
-  border: 1px solid;
-  border-radius: 1px;
+  border-radius: 5px;
+  width: 300px
+
 }
 
 .errorInput {
   font-size: 12px;
   font-family: inherit;
-  background-color: rgb(185, 130, 126);
+  background-color: rgb(216, 108, 100);
   border: 1px solid;
-  border-radius: 1px;
+  border-radius: 5px;
+  width: 300px
 }
 
 .error {

@@ -24,7 +24,6 @@ function HW3() {
             homeworks 3
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeGreeting/>*/}

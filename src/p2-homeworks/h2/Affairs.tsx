@@ -30,7 +30,7 @@ function Affairs(props: AffairsPropsType) {
     const onLow = s.button + ' ' + (props.filter === 'low' ? s.active : '')
   
     return (
-        <div>
+        <div className={s.affairs}>
             {mappedAffairs}
             <button onClick={setAll} className={onAll}>All</button>
             <button onClick={setHigh} className={onHigh}>High</button>

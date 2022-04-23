@@ -28,9 +28,8 @@
     margin: 0em;
     font: 500 15px system-ui;  
 }
-.background {
+.hw2 {
     background-color: rgb(229, 255, 169);
-   
 }
 .deleteButton {
     border-radius: 10px;
@@ -63,4 +62,7 @@
     padding: 5px;
     position: absolute;
     left: 160px;
+   }
+   .affairs {
+    height: 180px;
    }
