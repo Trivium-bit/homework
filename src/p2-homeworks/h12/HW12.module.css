@@ -7,11 +7,11 @@
 }
 
 .red {
-    background: lightcoral;
+    background: rgb(250, 184, 184);
 }
 
 .red-text {
-    color: aqua;
+    color: rgb(80, 4, 179);
 }
 
 .some {

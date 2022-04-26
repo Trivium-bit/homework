@@ -10,9 +10,9 @@ export const loadingReducer = (state = initState, action: ActionsType): typeof i
             isLoading: action.isLoading
         }
     }
-        default: return state
+        default: return state;
     }
-}
+};
 type ActionsType = isLoadingActionType;
 
 type isLoadingActionType = {
