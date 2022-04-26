@@ -1,3 +1,21 @@
-.range {
+input[type=range] {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 7px;
+    border: 1px solid #bdc3c7;
+    background-color: rgb(147, 240, 247);
+}
 
+.span {
+    color: rgb(0, 119, 255);
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputRange {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
