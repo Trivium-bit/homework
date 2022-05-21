@@ -1,7 +1,11 @@
 import axios from 'axios'
 
+export type D = {
+    errorText: string
+}
+
 export type BodyType = {
-    object: {success: boolean}
+        success: boolean
 }
 
 export type ResponseType<D = {}> = {
@@ -16,7 +20,7 @@ const instance = axios.create({
 
 export const requestAPI = {
     changeSuccess(success: boolean) {
-        const promise = instance.post<ResponseType<{ body: BodyType }>>('auth/test', {success: success});
+        const promise = instance.post<ResponseType<{ body: BodyType }>>('auth/test', {success});
         return promise;
     }
 }
