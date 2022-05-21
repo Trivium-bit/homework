@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export type D = {
+export type DataType = { //???????????????
     errorText: string
 }
 
@@ -8,10 +8,10 @@ export type BodyType = {
         success: boolean
 }
 
-export type ResponseType<D = {}> = {
+export type ResponseType<DataType = {}> = {
     resultCode: number
     success: boolean
-    data: D
+  //  data: 
 }
 
 const instance = axios.create({

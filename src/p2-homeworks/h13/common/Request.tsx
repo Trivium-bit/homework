@@ -11,7 +11,7 @@ function Request() {
     const changeSuccessAPI = (success: boolean) => {
         requestAPI.changeSuccess(success)
             .then(response => {
-                const requestMessage = response.data.errorText
+                const requestMessage = response.data
                 console.log(requestMessage)
             })
             .catch(error => {
