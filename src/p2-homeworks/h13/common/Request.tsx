@@ -16,8 +16,8 @@ function Request() {
             })
             .catch(error => {
                 console.log({ ...error });
-                const requestMessage = error.response.data.errorText
                 console.log(error.response ? error.response.data.errorText : error.message);
+                const requestMessage = error.response.data.errorText
                 setRequestMessage(requestMessage)
             })
     }
