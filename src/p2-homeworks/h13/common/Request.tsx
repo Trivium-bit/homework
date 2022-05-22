@@ -6,32 +6,31 @@ import { requestAPI } from "../api/RequestsAPI";
 function Request() {
 
     const [requestMessage, setRequestMessage] = useState<string>('')
-    const [errorMessage, setErrorMessage] = useState<string>('')
-
+    
     const changeSuccessAPI = (success: boolean) => {
         requestAPI.changeSuccess(success)
             .then(response => {
-                const requestMessage = response.data
+                const requestMessage = response.data.errorText
                 console.log(requestMessage)
+                setRequestMessage(requestMessage)
             })
             .catch(error => {
                 console.log({ ...error });
-                const errorMessage = error.response.data.errorText
+                const requestMessage = error.response.data.errorText
                 console.log(error.response ? error.response.data.errorText : error.message);
+                setRequestMessage(requestMessage)
             })
     }
 
     const changeSuccess = (success: boolean) => {
         changeSuccessAPI(success)
-        setRequestMessage(requestMessage)
-        setErrorMessage(errorMessage)
     }
 
     return (
         <div>
             <SuperButton onClick={() => { changeSuccess(true) }}> Push </SuperButton>
             <SuperCheckbox changeSuccess={changeSuccess} />
-            <div>Message:{ requestMessage }{ errorMessage }</div>
+            <div>Message:{ requestMessage }</div>
         </div>
     );
 }
